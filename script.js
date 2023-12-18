@@ -16,6 +16,8 @@ function addTask() {
 
 function editTask(button) {
   var taskText = button.parentNode.firstChild;
+
+//change this value using `{$}` ///
   var updatedTask = prompt("Edit task:", taskText.nodeValue);
   if (updatedTask !== null) {
     taskText.nodeValue = updatedTask;
